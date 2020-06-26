@@ -1,28 +1,51 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+  <div class="u-margin-top">
+   
+
+<div class="container fluid ">
+<b-container class="bv-example-row">
+<b-row>
+ <b-col>
+  <Notification/>
+     </b-col>
+    <b-col >
+  <ControlPanel/>
+  <b-row> 
+    <b-col sm="10">
+    <LogPanel/>
+    </b-col >
+     </b-row>
+
+    </b-col>
+ </b-row>
+</b-container>
+
+</div>
+  
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+
+import ControlPanel from "./components/ControlPanel.vue";
+import Notification from "./components/Notification.vue";
+import LogPanel from "./components/LogPanel.vue";
+
 
 export default {
   name: "App",
   components: {
-    HelloWorld
+    ControlPanel,
+    Notification,
+    LogPanel
   }
 };
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+
+.u-margin-top{
+  margin-top: 30px;
 }
+
 </style>
